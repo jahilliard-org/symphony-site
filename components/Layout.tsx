@@ -1,13 +1,13 @@
-import Meta from './meta'
+import Meta from "./meta"
 
 export default function Layout({ children }: any) {
-    return (
-      <>
-        <Meta />
-        <div className="">
-          <main>{children}</main>
-        </div>
-        {/* <Footer /> */}
-      </>
-    )
-  }
+  return (
+    <>
+      <Meta />
+      <div className="">
+        <main>{children}</main>
+      </div>
+      {/* <Footer /> */}
+    </>
+  )
+}

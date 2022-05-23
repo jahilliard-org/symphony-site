@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint --ignore-path .gitignore --ignore-path .eslintignore --ext .js,.ts,.tsx ."
   },
   "dependencies": {
     "autoprefixer": "^10.4.7",
@@ -17,15 +17,21 @@
   },
   "prettier": {
     "semi": false,
-    "singleQuote": true
+    "printWidth": 100
   },
   "lint-staged": {
-    "{pages,components,test}/**/*.ts": [
-      "prettier --write",
-      "git add"
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
     "@types/node": "17.0.35",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
