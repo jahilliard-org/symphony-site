@@ -34,6 +34,8 @@ export default function Meta() {
         name="Symphony Development"
         content={`Improving Urban Life with Sustainable Real Estate Solutions`}
       />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
       {/* <meta property="og:image" content={HOME_OG_IMAGE_URL} /> */}
     </Head>
   )

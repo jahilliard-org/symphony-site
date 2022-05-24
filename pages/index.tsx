@@ -1,19 +1,21 @@
+import { AppProps } from "next/app"
 import Head from "next/head"
-import Image from "next/image"
+import { ReactNode } from "react"
+import Layout from "components/Layout"
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Symphony Development</title>
       </Head>
-      <main>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      </main>
-
-      <footer></footer>
-    </div>
+      <div className="h-80"></div>
+    </>
   )
+}
+
+Home.getLayout = function getLayout(page: ReactNode) {
+  return <Layout>{page}</Layout>
 }
 
 export default Home
