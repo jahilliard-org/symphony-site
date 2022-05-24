@@ -17,8 +17,8 @@ export const MainContent = tw.main`
 export const SideContent = tw.div`
   bg-brand-light
   md:w-1/4
-  md:visible
-  invisible
+  md:inline
+  hidden
 `
 
 export const SideTitle: FC<{ children: ReactNode }> = ({ children }) => {
@@ -51,7 +51,7 @@ export const CopyParagraph = tw.p`
 export const CarouselImage: FC<{ src: string; copy: string }> = ({ src, copy }) => {
   return (
     <div>
-      <Image width={700} height={350} src={src} alt="" />
+      <Image width={700} height={350} src={src} alt={copy} />
       <div className="h-12 bg-brand-green opacity-90 align-baseline -mt-14">
         <p className="pl-12 text-white font-inter pt-5 text-xs">{copy}</p>
       </div>
