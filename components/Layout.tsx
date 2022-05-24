@@ -19,7 +19,7 @@ const Layout: FC<{ children: ReactNode }> = ({ children }) => {
       <Meta />
       <ContentWrapper>
         <SiteHeader />
-        <main>{children}</main>
+        {children}
         <SiteFooter />
       </ContentWrapper>
     </>
