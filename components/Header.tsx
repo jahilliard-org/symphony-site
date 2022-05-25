@@ -27,7 +27,7 @@ const SiteHeader: FC<{}> = () => {
         <div className="mb-2 md:-mb-2">
           <Image src={"/logo.png"} width={137} height={122} alt="Symphony Develoment logo" />
         </div>
-        <nav className="flex flex-row space-x-3 items-end md:mr-8">
+        <nav className="flex flex-row space-x-3 items-end md:mr-24">
           <MenuElement href="/">Home</MenuElement>
           <MenuElement href="/philosophy">Philosophy</MenuElement>
           <MenuElement href="/portfolio">Portfolio</MenuElement>

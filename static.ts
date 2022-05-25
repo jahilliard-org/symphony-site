@@ -330,7 +330,7 @@ export const employeeList: Employee[] = [
         Properties, an institutional real estate and bank advisory firm, providing construction
         lending and development assistance for corporate real estate developers and U.S. offices of
         overseas banks. Mr. Hilliard has also held a First VP and Regional Manager role with
-        Security Pacific National Bank&apos;s Real Estate Industries Group where he managed a $1
+        Security Pacific National Bank's Real Estate Industries Group where he managed a $1
         billion portfolio of commercial and construction financing and an Assistant VP role with
         Manufacturers Bank.
         `,
@@ -362,11 +362,11 @@ export const employeeList: Employee[] = [
     rate hedging, and a full range of general corporate banking services.
     `,
       `
-    Ted Snyder&apos;s key management positions include a Vice President and Regional Manager
+    Ted Snyder's key management positions include a Vice President and Regional Manager
     role at Bank of America in the Los Angeles Real Estate Construction Lending Division where
     loan portfolios under his management ranged from $400 million to $1.2 billion and he was
     responsible for the underwriting and servicing of more than $5 billion in commercial real
-    estate loans. Mr. Snyder also served as Senior VP of Bank of America&apos;s Real Estate Loan
+    estate loans. Mr. Snyder also served as Senior VP of Bank of America's Real Estate Loan
     Sales and Syndication Division where he successfully sold more than $1.2 billion in real
     estate construction and real estate secured loan commitments. Ted Snyder also served as
     Executive VP of IndyMac, a publicly traded mortgage REIT where he established a new income
@@ -392,7 +392,7 @@ export const employeeList: Employee[] = [
       `Mr. Mavar holds a Bachelor of Science degree from the U.S. Naval Academy and a Master of
         Science degree from the University of Southern California. He is a licensed general
         contractor and a licensed real estate broker in the state of California as well as a U.S.
-        Green Building Council LEED Accredited Professional in Building Design &#38; Construction.`,
+        Green Building Council LEED Accredited Professional in Building Design & Construction.`,
     ],
   },
   {
@@ -429,7 +429,7 @@ export const employeeList: Employee[] = [
       `
         Howard graduated from Harvard University with a Master of Urban Planning. He also holds a
         Master of Science degree in Real Estate Development from Columbia University and a Bachelor
-        of Arts degree in Urban Studies &#38; Design of the Environment from the University of
+        of Arts degree in Urban Studies & Design of the Environment from the University of
         Pennsylvania.`,
     ],
   },

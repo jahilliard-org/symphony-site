@@ -13,6 +13,7 @@ import {
   SideContent,
   SideTitle,
   ClickableA,
+  EmployeeSideMenu,
 } from "components/Utils"
 import { GetStaticProps } from "next"
 import { InferGetStaticPropsType } from "next"
@@ -46,19 +47,7 @@ const Contact = ({ employeeList }: InferGetStaticPropsType<typeof getStaticProps
           </CopySection>
         </MainContent>
         <SideContent>
-          <SideTitle>
-            {employeeList.map((employee) => {
-              return (
-                <div key={employee.name}>
-                  <Link href={`/managers/${employee.id}`}>
-                    <ClickableA className="text-sm">
-                      <span className="pr-4 text-lg">›</span> {employee.name}
-                    </ClickableA>
-                  </Link>
-                </div>
-              )
-            })}
-          </SideTitle>
+          <EmployeeSideMenu employeeList={employeeList} />
         </SideContent>
       </ContentLayout>
     </>

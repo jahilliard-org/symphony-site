@@ -2,6 +2,7 @@ import tw from "tailwind-styled-components"
 import Image from "next/image"
 import { FC, ReactNode } from "react"
 import { Employee, Employees } from "types"
+import Link from "next/link"
 
 export const ContentLayout = tw.div`
   flex
@@ -50,22 +51,33 @@ export const ClickableA = tw.a`
   `
 
 export const EmployeeContact: FC<{
+  id: string
   profSrc: string
   name: string
   title: string
   email: string
   profHeight?: number
   profWidth?: number
-}> = ({ profSrc, name, title, email, profHeight, profWidth }) => {
+}> = ({ id, profSrc, name, title, email, profHeight, profWidth }) => {
+  const managerProfileLink = `/management/${id}`
   return (
     <div className="flex flex-row space-x-4">
       <div>
-        <ImageFrame>
-          <Image src={profSrc} alt={name} width={profWidth || "150"} height={profHeight || "200"} />
-        </ImageFrame>
+        <Link href={managerProfileLink}>
+          <ImageFrame className="cursor-pointer">
+            <Image
+              src={profSrc}
+              alt={name}
+              width={profWidth || "150"}
+              height={profHeight || "200"}
+            />
+          </ImageFrame>
+        </Link>
       </div>
       <div className="w-full font-inter mt-2">
-        <h2 className="text-md uppercase font-goth ">{name}</h2>
+        <Link href={managerProfileLink}>
+          <h2 className="text-md uppercase font-goth cursor-pointer">{name}</h2>
+        </Link>
         <div className="w-full border-b"></div>
         <div className="mt-2">
           <p>{title}</p>
@@ -74,6 +86,24 @@ export const EmployeeContact: FC<{
       </div>
       {/* <h2 className="font-goth text-ls text-brand-darkest">{children}</h2> */}
     </div>
+  )
+}
+
+export const EmployeeSideMenu: FC<{ employeeList: Employee[] }> = ({ employeeList }) => {
+  return (
+    <SideTitle>
+      {employeeList.map((employee) => {
+        return (
+          <div key={employee.name}>
+            <Link href={`/management/${employee.id}`}>
+              <ClickableA className="text-sm">
+                <span className="pr-4 text-lg">›</span> {employee.name}
+              </ClickableA>
+            </Link>
+          </div>
+        )
+      })}
+    </SideTitle>
   )
 }
 
