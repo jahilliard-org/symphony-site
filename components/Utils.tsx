@@ -43,32 +43,11 @@ export const SideTitle: FC<{ children: ReactNode }> = ({ children }) => {
   )
 }
 
-export const employeeList: Employee[] = [
-  {
-    profSrc: "/employees/dave.jpg",
-    name: "David A. Hilliard",
-    title: "Principal",
-    email: "dhilliard@symphonydevelopment.com",
-  },
-  {
-    profSrc: "/employees/ted.jpg",
-    name: "Theodore M. Snyder",
-    title: "Principal",
-    email: "tsnyder@symphonydevelopment.com",
-  },
-  {
-    profSrc: "/employees/john.jpg",
-    name: "John A. Mavar",
-    title: "Director of Construction",
-    email: "jmavar@symphonydevelopment.com",
-  },
-  {
-    profSrc: "/employees/howard.jpg",
-    name: "Howard Kozloff",
-    title: "Director of Acquisitions",
-    email: "hkozloff@symphonydevelopment.com",
-  },
-]
+export const ClickableA = tw.a`
+  hover:text-brand-darker
+  hover:border-b
+  hover:border-brand-darker
+  `
 
 export const EmployeeContact: FC<{
   profSrc: string
@@ -90,12 +69,7 @@ export const EmployeeContact: FC<{
         <div className="w-full border-b"></div>
         <div className="mt-2">
           <p>{title}</p>
-          <a
-            className="hover:text-brand-darker hover:border-b hover:border-brand-darker"
-            href={`mailto:${email}`}
-          >
-            {email}
-          </a>
+          <ClickableA href={`mailto:${email}`}>{email}</ClickableA>
         </div>
       </div>
       {/* <h2 className="font-goth text-ls text-brand-darkest">{children}</h2> */}
