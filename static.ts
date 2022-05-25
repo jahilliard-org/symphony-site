@@ -101,6 +101,216 @@ export const portfolio: Project[] = [
       `Entitlement and plan approval for a 99,317-square-foot class A office development in Sunnyvale. The 4.6-acre site includes a four-level structure and 348 surface parking spaces.`,
     ],
   },
+  {
+    id: "the-2801",
+    category: "Multi-Family Residential",
+    name: "2801 Palm Canyon",
+    showcaseImgs: [],
+    address: "2801 S. PALM CANYON DRIVE, PALM SPRINGS, CA",
+    desc: [
+      `Entitlement, development, and sale of a 16-unit high-end townhome project. Well-received with buyers, the two-story freestanding modern townhome units include individual swimming pools and surround a center courtyard and public art space.`,
+    ],
+  },
+  {
+    id: "the-craftsman",
+    category: "Multi-Family Residential",
+    name: "The Craftsman",
+    showcaseImgs: [],
+    address: "6300 HONOLULU, TUJUNGA, CA",
+    desc: [
+      `Entitlement, construction and sale of an 18-unit for-sale residential townhome project. The project consists of two and three-story units over private garages.`,
+    ],
+  },
+  {
+    id: "the-hudson",
+    category: "Multi-Family Residential",
+    name: "The Hudson",
+    showcaseImgs: [],
+    address: "742 and 748 LOCUST STREET, PASADENA, CA",
+    desc: [
+      `Entitlement, development and sale of a 150-unit condominium project. The structure includes a two-level subterranean parking garage with four levels encompassing all residential units above.`,
+    ],
+  },
+  {
+    id: "bridgeway-mills",
+    category: "Multi-Family Residential",
+    name: "Bridgeway Mills",
+    showcaseImgs: [],
+    address: "PLAYA VISTA, CA",
+    desc: [
+      `Construction Management of a two-story, 80-unit townhome development with $44 million in total project costs.`,
+    ],
+  },
+  {
+    id: "metro-lofts",
+    category: "Multi-Family Residential",
+    name: "Metro Lofts",
+    showcaseImgs: [],
+    address: "PLAYA VISTA, CA",
+    desc: [
+      `Construction management of a 121-unit for-sale residential project in a Los Angeles coastal community. Four stories of housing with $41 million total project costs.`,
+    ],
+  },
+  {
+    id: "del-rey-apartments",
+    category: "Multi-Family Residential",
+    name: "Del Rey Apartments",
+    showcaseImgs: [],
+    address: "PLAYA VISTA, CA",
+    desc: [
+      `Construction Management of a three-story, 203-unit apartment community with $36 million in project costs.`,
+    ],
+  },
+  {
+    id: "del-rey-apartments",
+    category: "Multi-Family Residential",
+    name: "Del Rey Apartments",
+    showcaseImgs: [],
+    address: "PLAYA VISTA, CA",
+    desc: [
+      `Construction Management of a three-story, 203-unit apartment community with $36 million in project costs.`,
+    ],
+  },
+  {
+    id: "2239-montrose-ave",
+    category: "Multi-Family Residential",
+    name: "2239 Montrose Ave",
+    showcaseImgs: [],
+    address: "MONTROSE, CA",
+    desc: [
+      `Symphony Development completed the entitlement, development and sale of an 11-unit for-sale townhome project. The community includes two-story units over a podium garage.`,
+    ],
+  },
+  {
+    id: "2239-montrose-ave",
+    category: "Multi-Family Residential",
+    name: "2239 Montrose Ave",
+    showcaseImgs: [],
+    address: "MONTROSE, CA",
+    desc: [
+      `Symphony Development completed the entitlement, development and sale of an 11-unit for-sale townhome project. The community includes two-story units over a podium garage.`,
+    ],
+  },
+  {
+    id: "1733-armacost",
+    category: "Multi-Family Residential",
+    name: "1733 Armacost",
+    showcaseImgs: [],
+    address: "LOS ANGELES, CA",
+    desc: [
+      `Entitlement, construction and sale of an 4-unit for-sale residential townhome project. The project consists of two and three-story units over private garages.`,
+    ],
+  },
+  {
+    id: "ventura-blvd-at-whitsett-ave",
+    category: "Retail",
+    name: "Ventura Blvd. at Whitsett",
+    showcaseImgs: [],
+    address: "STUDIO CITY, CA",
+    desc: [
+      `Entitlement, development and construction of 12,500-square-foot drive-through banking office and street-front retail. Symphony acted as City National Bank’s project developer for the urban site, attracting credit retail tenants to fill 100% of the project.`,
+    ],
+  },
+  {
+    id: "17851-chatsworth",
+    category: "Retail",
+    name: "Chatsworth at Zelzah",
+    showcaseImgs: [],
+    address: "GRANADA HILLS, CA",
+    desc: [
+      `Acquisition of an existing bank branch building to maximize the site’s usability and value through its redevelopment into an 8,000-square-foot multi tenant retail center.`,
+    ],
+  },
+  {
+    id: "40405-winchester-road",
+    category: "Retail",
+    name: "40405 Winchester Road",
+    showcaseImgs: [],
+    address: "TEMECULA, CA",
+    desc: [
+      `The 7,100-square-foot retail center located in Temecula was acquired by Symphony and repositioned to capitalize on market dynamics and demand for quality retail amenities. The repositioning focused on upgrading tenant quality and full-lease up.`,
+    ],
+  },
+  {
+    id: "930-stonehill",
+    category: "Single-Family Residential",
+    name: "930 Stonehill",
+    showcaseImgs: [],
+    address: "BRENTWOOD, CA",
+    desc: [
+      `Site acquisition, entitlement and construction of a 5-bedroom custom home in upscale Brentwood. The modern family home boasts sweeping ocean views from Palos Verdes to the Santa Monica bay.`,
+    ],
+  },
+  {
+    id: "921-kenter-way",
+    category: "Single-Family Residential",
+    name: "921 Kenter Way",
+    showcaseImgs: [],
+    address: "BRENTWOOD, CA",
+    desc: [
+      `Site acquisition, entitlement and construction of a 5-bedroom modern, custom home in the prestigious Crestwood Hills neighborhood in Brentwood.`,
+    ],
+  },
+  {
+    id: "921-kenter-way",
+    category: "Single-Family Residential",
+    name: "921 Kenter Way",
+    showcaseImgs: [],
+    address: "BRENTWOOD, CA",
+    desc: [
+      `Site acquisition, entitlement and construction of a 5-bedroom modern, custom home in the prestigious Crestwood Hills neighborhood in Brentwood.`,
+    ],
+  },
+  {
+    id: "896-greenridge",
+    category: "Single-Family Residential",
+    name: "896 Greenridge Drive",
+    showcaseImgs: [],
+    address: "LA CAÑADA, CA",
+    desc: [
+      `Site acquisition, entitlement and construction of a 5-bedroom modern, custom home in the prestigious Crestwood Hills neighborhood in Brentwood.`,
+    ],
+  },
+  {
+    id: "896-greenridge",
+    category: "Single-Family Residential",
+    name: "896 Greenridge Drive",
+    showcaseImgs: [],
+    address: "LA CAÑADA, CA",
+    desc: [
+      `Site acquisition, entitlement and construction of a 5-bedroom custom home. The residence includes a number of family-focused amenities and is located adjacent to a golf course, boasting views of the greens.`,
+    ],
+  },
+  {
+    id: "768-forest-green",
+    category: "Single-Family Residential",
+    name: "768 Forest Green Drive",
+    showcaseImgs: [],
+    address: "LA CAÑADA, CA",
+    desc: [
+      `Site acquisition, entitlement and construction of a custom, upscale 5-bedroom residence. The large traditional home is surrounded by expansive yard space with extensive landscaping.`,
+    ],
+  },
+  {
+    id: "756-forest-green",
+    category: "Single-Family Residential",
+    name: "756 Forest Green Drive",
+    showcaseImgs: [],
+    address: "LA CAÑADA, CA",
+    desc: [
+      `Site acquisition, entitlement and construction of a 5-bedroom custom home. The large family residence overlooks La Cañada with views od dowton Los Angeles.`,
+    ],
+  },
+  {
+    id: "754-forest-green",
+    category: "Single-Family Residential",
+    name: "754 Forest Green Drive",
+    showcaseImgs: [],
+    address: "LA CAÑADA, CA",
+    desc: [
+      `Site acquisition, entitlement and construction of a 5-bedroom custom home. The large family residence overlooks the La Cañada with views of downtown Los Angeles.`,
+    ],
+  },
 ]
 
 export const employeeList: Employee[] = [
