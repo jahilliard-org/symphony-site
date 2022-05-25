@@ -1,6 +1,7 @@
 import tw from "tailwind-styled-components"
 import Image from "next/image"
 import { FC, ReactNode } from "react"
+import { Employee, Employees } from "types"
 
 export const ContentLayout = tw.div`
   flex
@@ -14,6 +15,10 @@ export const MainContent = tw.main`
   mb-4
 `
 
+export const Email = tw.a`
+  hover
+`
+
 export const SideContent = tw.div`
   bg-brand-light
   md:w-1/4
@@ -21,10 +26,79 @@ export const SideContent = tw.div`
   hidden
 `
 
+export const ImageFrame = tw.div`
+  bg-gray-100
+  border
+  pb-1
+  pt-2
+  px-2
+  border-gray-200
+`
+
 export const SideTitle: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <div className="mx-6 mt-20">
-      <h2 className="font-goth text-ls text-brand-darkest">{children}</h2>
+      <h2 className="font-goth  text-brand-darkest">{children}</h2>
+    </div>
+  )
+}
+
+export const employeeList: Employee[] = [
+  {
+    profSrc: "/employees/dave.jpg",
+    name: "David A. Hilliard",
+    title: "Principal",
+    email: "dhilliard@symphonydevelopment.com",
+  },
+  {
+    profSrc: "/employees/ted.jpg",
+    name: "Theodore M. Snyder",
+    title: "Principal",
+    email: "tsnyder@symphonydevelopment.com",
+  },
+  {
+    profSrc: "/employees/john.jpg",
+    name: "John A. Mavar",
+    title: "Director of Construction",
+    email: "jmavar@symphonydevelopment.com",
+  },
+  {
+    profSrc: "/employees/howard.jpg",
+    name: "Howard Kozloff",
+    title: "Director of Acquisitions",
+    email: "hkozloff@symphonydevelopment.com",
+  },
+]
+
+export const EmployeeContact: FC<{
+  profSrc: string
+  name: string
+  title: string
+  email: string
+  profHeight?: number
+  profWidth?: number
+}> = ({ profSrc, name, title, email, profHeight, profWidth }) => {
+  return (
+    <div className="flex flex-row space-x-4">
+      <div>
+        <ImageFrame>
+          <Image src={profSrc} alt={name} width={profWidth || "150"} height={profHeight || "200"} />
+        </ImageFrame>
+      </div>
+      <div className="w-full font-inter mt-2">
+        <h2 className="text-md uppercase font-goth ">{name}</h2>
+        <div className="w-full border-b"></div>
+        <div className="mt-2">
+          <p>{title}</p>
+          <a
+            className="hover:text-brand-darker hover:border-b hover:border-brand-darker"
+            href={`mailto:${email}`}
+          >
+            {email}
+          </a>
+        </div>
+      </div>
+      {/* <h2 className="font-goth text-ls text-brand-darkest">{children}</h2> */}
     </div>
   )
 }
@@ -40,7 +114,7 @@ export const CopyTitle = tw.h1`
   text-brand-dark
 `
 
-export const CopyParagraph = tw.p`
+export const CopyParagraph = tw.div`
   font-inter
   text-xs
   font-normal
