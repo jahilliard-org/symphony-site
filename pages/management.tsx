@@ -16,6 +16,7 @@ import {
 } from "components/Utils"
 import { GetStaticProps } from "next"
 import { InferGetStaticPropsType } from "next"
+import Link from "next/link"
 
 export const getStaticProps: GetStaticProps<{ employeeList: Employee[] }> = async () => {
   return {
@@ -49,9 +50,11 @@ const Contact = ({ employeeList }: InferGetStaticPropsType<typeof getStaticProps
             {employeeList.map((employee) => {
               return (
                 <div key={employee.name}>
-                  <ClickableA className="text-sm">
-                    <span className="pr-4 text-lg">›</span> {employee.name}
-                  </ClickableA>
+                  <Link href={`/managers/${employee.id}`}>
+                    <ClickableA className="text-sm">
+                      <span className="pr-4 text-lg">›</span> {employee.name}
+                    </ClickableA>
+                  </Link>
                 </div>
               )
             })}

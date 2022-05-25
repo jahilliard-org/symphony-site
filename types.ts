@@ -9,6 +9,16 @@ export interface Employee {
   name: string
   title: string
   email: string
+  desc: string[]
+}
+
+export interface Project {
+  id: string
+  category: string
+  name: string
+  showcaseImgs: string[]
+  address: string
+  desc: string[]
 }
 
 export type Employees = Employee[]
