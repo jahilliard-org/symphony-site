@@ -12,46 +12,44 @@ import {
 import { GetStaticProps, InferGetStaticPropsType } from "next"
 import Head from "next/head"
 import { ReactNode } from "react"
-import { employeeList as employeeListProps } from "static"
-import { Employee } from "types"
+import { portfolio } from "static"
+import { Project } from "types"
 
-export const getStaticProps: GetStaticProps<{ employeeList: Employee[] }> = async () => {
+export const getStaticProps: GetStaticProps<{ portfolio: Project[] }> = async () => {
   return {
     props: {
-      employeeList: employeeListProps,
+      portfolio,
     },
   }
 }
 
-const Management = ({ employeeList }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Portfolio = ({ portfolio }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Head>
-        <title>Symphony Management</title>
+        <title>Symphony Portfolio</title>
       </Head>
       <ContentLayout>
         <MainContent>
           <CopySection>
-            <CopyTitle className="mb-4">Management</CopyTitle>
+            <CopyTitle className="mb-4">Portfolio</CopyTitle>
             <CopyParagraph>
-              <div className="space-y-4">
-                {employeeList.map((employee) => {
+              {/* <div className="space-y-4">
+                {portfolio.map((employee) => {
                   return <EmployeeContact key={employee.email} {...employee} />
                 })}
-              </div>
+              </div> */}
             </CopyParagraph>
           </CopySection>
         </MainContent>
-        <SideContent>
-          <EmployeeSideMenu employeeList={employeeList} />
-        </SideContent>
+        <SideContent>{/* <EmployeeSideMenu employeeList={employeeList} /> */}</SideContent>
       </ContentLayout>
     </>
   )
 }
 
-Management.getLayout = function getLayout(page: ReactNode) {
+Portfolio.getLayout = function getLayout(page: ReactNode) {
   return <Layout>{page}</Layout>
 }
 
-export default Management
+export default Portfolio

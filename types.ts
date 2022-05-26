@@ -16,7 +16,6 @@ export interface Project {
   id: string
   category: string
   name: string
-  showcaseImgs: string[]
   address: string
   desc: string[]
 }

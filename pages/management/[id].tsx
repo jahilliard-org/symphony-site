@@ -1,39 +1,35 @@
-import Head from "next/head"
-import Image from "next/image"
-import { ReactNode } from "react"
 import Layout from "components/Layout"
-import { Employee, NextPage } from "types"
-import { employeeList } from "static"
 import {
   ContentLayout,
   CopyParagraph,
   CopySection,
   CopyTitle,
-  EmployeeContact,
+  EmployeeSideMenu,
+  ImageFrame,
   MainContent,
   SideContent,
-  SideTitle,
-  ClickableA,
-  ImageFrame,
-  EmployeeSideMenu,
 } from "components/Utils"
-import { GetStaticProps } from "next"
-import { InferGetStaticPropsType } from "next"
+import { GetStaticProps, InferGetStaticPropsType } from "next"
+import Head from "next/head"
+import Image from "next/image"
+import { ReactNode } from "react"
+import { employeeList } from "static"
+import { Employee } from "types"
 
 const Manager = ({ employee, employeeList }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  const { profSrc, name, title, email, desc } = employee
+  const { profSrc, name, title, desc } = employee
   return (
     <>
       <Head>
         <title>
-          {employee.name} - {employee.title}
+          {name} - {title}
         </title>
       </Head>
       <ContentLayout>
         <MainContent>
           <CopySection>
             <CopyTitle className="mb-4">
-              {employee.name} - {employee.title}
+              {name} - {title}
             </CopyTitle>
             <div className="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
               <div className="md:w-1/3 items-center">
