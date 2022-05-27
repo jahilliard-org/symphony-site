@@ -173,15 +173,6 @@ export const portfolio: Project[] = [
     ],
   },
   {
-    id: "2239-montrose-ave",
-    category: "Multi-Family Residential",
-    name: "2239 Montrose Ave",
-    address: "MONTROSE, CA",
-    desc: [
-      `Symphony Development completed the entitlement, development and sale of an 11-unit for-sale townhome project. The community includes two-story units over a podium garage.`,
-    ],
-  },
-  {
     id: "1733-armacost",
     category: "Multi-Family Residential",
     name: "1733 Armacost",
@@ -231,24 +222,6 @@ export const portfolio: Project[] = [
     category: "Single-Family Residential",
     name: "921 Kenter Way",
     address: "BRENTWOOD, CA",
-    desc: [
-      `Site acquisition, entitlement and construction of a 5-bedroom modern, custom home in the prestigious Crestwood Hills neighborhood in Brentwood.`,
-    ],
-  },
-  {
-    id: "921-kenter-way",
-    category: "Single-Family Residential",
-    name: "921 Kenter Way",
-    address: "BRENTWOOD, CA",
-    desc: [
-      `Site acquisition, entitlement and construction of a 5-bedroom modern, custom home in the prestigious Crestwood Hills neighborhood in Brentwood.`,
-    ],
-  },
-  {
-    id: "896-greenridge",
-    category: "Single-Family Residential",
-    name: "896 Greenridge Drive",
-    address: "LA CAÑADA, CA",
     desc: [
       `Site acquisition, entitlement and construction of a 5-bedroom modern, custom home in the prestigious Crestwood Hills neighborhood in Brentwood.`,
     ],

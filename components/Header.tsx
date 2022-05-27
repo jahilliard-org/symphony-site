@@ -25,7 +25,11 @@ const SiteHeader: FC<{}> = () => {
     <>
       <header className="flex flex-col items-center md:items-end md:flex-row md:justify-between py-2 md:px-4">
         <div className="mb-2 md:-mb-2">
-          <Image src={"/logo.png"} width={137} height={122} alt="Symphony Develoment logo" />
+          <Link href="/">
+            <a>
+              <Image src={"/logo.png"} width={137} height={122} alt="Symphony Develoment logo" />
+            </a>
+          </Link>
         </div>
         <nav className="flex flex-row space-x-3 items-end md:mr-24">
           <MenuElement href="/">Home</MenuElement>
