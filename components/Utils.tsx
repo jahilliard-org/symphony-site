@@ -1,8 +1,10 @@
 import tw from "tailwind-styled-components"
 import Image from "next/image"
 import { FC, ReactNode } from "react"
-import { Employee, Employees } from "types"
+import { Employee, Slide } from "types"
+import { showcase } from "static"
 import Link from "next/link"
+import Slider from "react-slick"
 
 export const ContentLayout = tw.div`
   flex
@@ -19,6 +21,20 @@ export const MainContent = tw.main`
 export const Email = tw.a`
   hover
 `
+
+export const ShowcaseSlider: FC<{ children: ReactNode }> = ({ children }) => {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 1000,
+    autoplaySpeed: 5000,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  }
+  return <Slider {...settings}> {children} </Slider>
+}
 
 export const SideContent = tw.div`
   bg-brand-light
@@ -125,6 +141,18 @@ export const CopyParagraph = tw.div`
   leading-relaxed
   text-brand-dark
 `
+
+export const Showcase: FC<{ slides: Slide[] }> = ({ slides }) => {
+  return (
+    <ShowcaseSlider>
+      {slides.map((slide) => {
+        return (
+          <CarouselImage key={`car-showcase-${slide.copy}`} src={slide.img} copy={slide.copy} />
+        )
+      })}
+    </ShowcaseSlider>
+  )
+}
 
 export const CarouselImage: FC<{ src: string; copy: string }> = ({ src, copy }) => {
   return (

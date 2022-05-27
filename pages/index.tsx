@@ -1,6 +1,6 @@
 import Head from "next/head"
-import { ReactNode } from "react"
-import { NextPage } from "types"
+import { FC, ReactNode } from "react"
+import { NextPage, Slide } from "types"
 import Layout from "components/Layout"
 import {
   CarouselImage,
@@ -11,20 +11,22 @@ import {
   MainContent,
   SideContent,
   SideTitle,
+  Showcase,
 } from "components/Utils"
-import Slider from "react-slick"
+import { showcase } from "static"
+import { GetStaticProps, InferGetStaticPropsType } from "next/types"
 
-const Home: NextPage = () => {
-  const settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 1000,
-    autoplaySpeed: 5000,
-    autoplay: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+export const getStaticProps: GetStaticProps<{
+  showcase: Slide[]
+}> = async () => {
+  return {
+    props: {
+      showcase,
+    },
   }
+}
+
+const Home = ({ showcase }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Head>
@@ -32,10 +34,7 @@ const Home: NextPage = () => {
       </Head>
       <ContentLayout>
         <MainContent>
-          <Slider {...settings}>
-            <CarouselImage src={"/slides/slide-1ZZZ3.jpg"} copy={"Mixed Use Envirorment"} />
-            <CarouselImage src={"/slides/slide-7OC0R.jpg"} copy={"Mixed Use Envirorment"} />
-          </Slider>
+          <Showcase slides={showcase} />
           <CopySection>
             <CopyTitle className="mb-4">
               Improving Urban Life with Sustainable Real Estate Solutions

@@ -8,22 +8,55 @@ import {
   EmployeeSideMenu,
   MainContent,
   SideContent,
+  ShowcaseSlider,
+  CarouselImage,
+  Showcase,
 } from "components/Utils"
+import { shuffle, sample } from "lodash"
+import { getPortfolioProjectImages } from "helpers"
 import { GetStaticProps, InferGetStaticPropsType } from "next"
 import Head from "next/head"
-import { ReactNode } from "react"
-import { portfolio } from "static"
-import { Project } from "types"
+import { ReactNode, useMemo } from "react"
+import { portfolio, showcase } from "static"
+import { EnhacedProject, Slide } from "types"
 
-export const getStaticProps: GetStaticProps<{ portfolio: Project[] }> = async () => {
+export const getStaticProps: GetStaticProps<{
+  portfolio: EnhacedProject[]
+  categories: { [key: string]: string[] }
+  showcase: Slide[]
+}> = async () => {
+  const enhancedPortfolio = getPortfolioProjectImages(portfolio)
+  const categories = enhancedPortfolio.reduce((categories, project) => {
+    return {
+      ...categories,
+      [project.category]: [...(categories[project.category] || []), project.id],
+    }
+  }, {} as { [key: string]: string[] })
   return {
     props: {
-      portfolio,
+      portfolio: enhancedPortfolio,
+      categories,
+      showcase,
     },
   }
 }
 
-const Portfolio = ({ portfolio }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Portfolio = ({
+  portfolio,
+  categories,
+  showcase,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
+  // console.log(categories)
+
+  // const carouselProjects = useMemo(() => {
+  //   const orderedCategories = shuffle(Object.keys(categories))
+
+  //   return orderedCategories.map((cat) => {
+  //     const projectId = sample(categories[cat])
+  //     return portfolio.filter((project) => project.id === projectId)[0]
+  //   })
+  // }, [portfolio, categories])
+
   return (
     <>
       <Head>
@@ -31,6 +64,7 @@ const Portfolio = ({ portfolio }: InferGetStaticPropsType<typeof getStaticProps>
       </Head>
       <ContentLayout>
         <MainContent>
+          <Showcase slides={showcase} />
           <CopySection>
             <CopyTitle className="mb-4">Portfolio</CopyTitle>
             <CopyParagraph>

@@ -1,4 +1,13 @@
-import { Employee, Project } from "types"
+import { Employee, Project, Slide } from "types"
+
+export const showcase: Slide[] = [
+  { copy: "Next Generation Student Housing", img: "/slides/slide-J9J5C.jpg" },
+  { copy: "Sustainable Building Practices", img: "/slides/slide-0JYY6.jpg" },
+  { copy: "Mixed Use Envirorments", img: "/slides/slide-52WRW.jpg" },
+  { copy: "Multi-Family and Single-Family Residential", img: "/slides/slide-AV0QB.jpg" },
+  { copy: "Urban Development Expertise", img: "/slides/slide-7OC0R.jpg" },
+  { copy: "Creative Site Planning", img: "/slides/slide-1ZZZ3.jpg" },
+]
 
 export const portfolio: Project[] = [
   {
