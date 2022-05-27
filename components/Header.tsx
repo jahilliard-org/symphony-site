@@ -4,7 +4,7 @@ import { FC, ReactNode } from "react"
 import tw from "tailwind-styled-components"
 
 const MenuItem = tw.div`
-font-goth text-sm text-brand-dark uppercase
+font-goth md:text-sm text-xs text-brand-dark uppercase
 hover:text-brand-darkest
 px-1
 link link-underline link-underline-black
