@@ -7,7 +7,7 @@ import SiteFooter from "components/Footer"
 
 export const ContentWrapper = tw.div`
   container
-  max-w-4xl
+  md:max-w-4xl
   mx-auto
   bg-white
   my-4

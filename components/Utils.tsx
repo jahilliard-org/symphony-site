@@ -44,11 +44,11 @@ export const SideContent = tw.div`
 `
 
 export const ImageFrame = tw.div`
-  bg-gray-100
   border
   pb-1
   pt-2
   px-2
+  bg-gray-100
   border-gray-200
 `
 
@@ -142,25 +142,42 @@ export const CopyParagraph = tw.div`
   text-brand-dark
 `
 
-export const Showcase: FC<{ slides: Slide[] }> = ({ slides }) => {
+export const Showcase: FC<{ slides: Slide[]; height?: number; width?: number }> = ({
+  slides,
+  height,
+  width,
+}) => {
   return (
     <ShowcaseSlider>
       {slides.map((slide) => {
         return (
-          <CarouselImage key={`car-showcase-${slide.copy}`} src={slide.img} copy={slide.copy} />
+          <CarouselImage
+            key={`car-showcase-${slide.copy}`}
+            src={slide.img}
+            copy={slide.copy}
+            height={height}
+            width={width}
+          />
         )
       })}
     </ShowcaseSlider>
   )
 }
 
-export const CarouselImage: FC<{ src: string; copy: string }> = ({ src, copy }) => {
+export const CarouselImage: FC<{
+  src: string
+  copy?: string
+  height?: number
+  width?: number
+}> = ({ src, copy, height, width }) => {
   return (
     <div>
-      <Image width={700} height={350} src={src} alt={copy} />
-      <div className="h-12 bg-brand-green opacity-90 align-baseline -mt-14">
-        <p className="pl-12 text-white font-inter pt-5 text-xs">{copy}</p>
-      </div>
+      <Image width={width || 700} height={height || 350} src={src} alt={copy} />
+      {copy && (
+        <div className="h-12 bg-brand-green opacity-90 align-baseline -mt-14">
+          <p className="pl-12 text-white font-inter pt-5 text-xs">{copy}</p>
+        </div>
+      )}
     </div>
   )
 }

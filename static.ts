@@ -22,7 +22,7 @@ export const portfolio: Project[] = [
   {
     id: "california-state-university-at-northridge",
     category: "Student Housing",
-    name: "Northridge, CA",
+    name: "Northridge Student Apartments",
     address: "Northridge, CA",
     desc: [
       `Northridge Student Apartments – Located on Reseda Boulevard, one block away from the university, the property will accommodate a 140 unit, 400 bed student apartment building. Entitlement is underway. Currently on this 1.5 acre site is a 12,000 square foot US Post Office.`,

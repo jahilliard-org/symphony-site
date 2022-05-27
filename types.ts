@@ -12,7 +12,7 @@ export interface Employee {
   desc: string[]
 }
 
-export type Slide = { copy: string; img: string }
+export type Slide = { copy?: string; img: string }
 
 export type EnhacedProject = Project & { showcaseImg: string; imgs: string[] }
 
