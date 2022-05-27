@@ -38,9 +38,9 @@ const Project = ({ project }: InferGetStaticPropsType<typeof getStaticProps>) =>
           <CopySection>
             <CopyTitle className="mb-4">{name}</CopyTitle>
             <ImageFrame>
-              <Showcase slides={slides} height={450} />
+              <Showcase slides={slides} height={450} settings={{ dots: true }} />
             </ImageFrame>
-            <CopyTitle className="text-sm uppercase mt-6 mb-2">{address}</CopyTitle>
+            <CopyTitle className="text-sm uppercase mt-8 mb-2">{address}</CopyTitle>
             {desc.map((p) => {
               return (
                 <>

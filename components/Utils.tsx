@@ -22,8 +22,11 @@ export const Email = tw.a`
   hover
 `
 
-export const ShowcaseSlider: FC<{ children: ReactNode }> = ({ children }) => {
-  const settings = {
+export const ShowcaseSlider: FC<{
+  children: ReactNode
+  settings?: { [key: string]: string | boolean }
+}> = ({ children, settings }) => {
+  const baseSettings = {
     dots: false,
     arrows: false,
     infinite: true,
@@ -32,8 +35,9 @@ export const ShowcaseSlider: FC<{ children: ReactNode }> = ({ children }) => {
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    ...settings,
   }
-  return <Slider {...settings}> {children} </Slider>
+  return <Slider {...baseSettings}> {children} </Slider>
 }
 
 export const SideContent = tw.div`
@@ -100,7 +104,6 @@ export const EmployeeContact: FC<{
           <ClickableA href={`mailto:${email}`}>{email}</ClickableA>
         </div>
       </div>
-      {/* <h2 className="font-goth text-ls text-brand-darkest">{children}</h2> */}
     </div>
   )
 }
@@ -142,13 +145,14 @@ export const CopyParagraph = tw.div`
   text-brand-dark
 `
 
-export const Showcase: FC<{ slides: Slide[]; height?: number; width?: number }> = ({
-  slides,
-  height,
-  width,
-}) => {
+export const Showcase: FC<{
+  slides: Slide[]
+  height?: number
+  width?: number
+  settings?: { [key: string]: string | boolean }
+}> = ({ slides, height, width, settings }) => {
   return (
-    <ShowcaseSlider>
+    <ShowcaseSlider settings={settings || {}}>
       {slides.map((slide) => {
         return (
           <CarouselImage

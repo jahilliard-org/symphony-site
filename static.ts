@@ -155,15 +155,6 @@ export const portfolio: Project[] = [
     ],
   },
   {
-    id: "del-rey-apartments",
-    category: "Multi-Family Residential",
-    name: "Del Rey Apartments",
-    address: "PLAYA VISTA, CA",
-    desc: [
-      `Construction Management of a three-story, 203-unit apartment community with $36 million in project costs.`,
-    ],
-  },
-  {
     id: "2239-montrose-ave",
     category: "Multi-Family Residential",
     name: "2239 Montrose Ave",
