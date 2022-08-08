@@ -336,43 +336,43 @@ export const employeeList: Employee[] = [
         contractor and a licensed real estate broker in the state of California as well as a U.S.
         Green Building Council LEED Accredited Professional in Building Design & Construction.`,
     ],
-  },
-  {
-    id: "howard-kozloff",
-    profSrc: "/employees/howard.jpg",
-    name: "Howard Kozloff",
-    title: "Director of Acquisitions",
-    email: "hkozloff@symphonydevelopment.com",
-    desc: [
-      `
-        Howard Kozloff is Director of Acquisitions for Symphony Development. In this role, he
-        identifies, evaluates and negotiates acquisitions of future project development sites.
-        Howard has been involved in this capacity for properties at the University of Southern
-        California and California State University-Northridge. Post-acquisition, he acts as a
-        development manager for Symphony Development, overseeing the concept and design project team
-        and its activities.
-        `,
-      `
-        Throughout his career, Howard has worked at the intersection of urban planning and real
-        estate development, with an emphasis on opportunistic strategies capitalizing on unique
-        neighborhoods and sites. Specializing in complex pre-development scenarios – including
-        public/private partnerships, challenging entitlements and disparate stakeholders – his work
-        leverages real estate expertise to create value-add opportunities across property types and
-        scales.
-        `,
-      `
-        Prior to Symphony Development, Howard held the positions of Director, Development Strategies
-        and Director of Operations at Hart Howerton, an internationally recognized land planning and
-        design firm. Before that, he was a development manager at The Martin Group, an opportunistic
-        development company, and at Macerich Company, a retail shopping center owner/developer. He
-        also has taught classes at the University of Southern California, University of
-        Pennsylvania, Columbia University and the Urban Land Institute.
-        `,
-      `
-        Howard graduated from Harvard University with a Master of Urban Planning. He also holds a
-        Master of Science degree in Real Estate Development from Columbia University and a Bachelor
-        of Arts degree in Urban Studies & Design of the Environment from the University of
-        Pennsylvania.`,
-    ],
-  },
+  }
+//   {
+//     id: "howard-kozloff",
+//     profSrc: "/employees/howard.jpg",
+//     name: "Howard Kozloff",
+//     title: "Director of Acquisitions",
+//     email: "hkozloff@symphonydevelopment.com",
+//     desc: [
+//       `
+//         Howard Kozloff is Director of Acquisitions for Symphony Development. In this role, he
+//         identifies, evaluates and negotiates acquisitions of future project development sites.
+//         Howard has been involved in this capacity for properties at the University of Southern
+//         California and California State University-Northridge. Post-acquisition, he acts as a
+//         development manager for Symphony Development, overseeing the concept and design project team
+//         and its activities.
+//         `,
+//       `
+//         Throughout his career, Howard has worked at the intersection of urban planning and real
+//         estate development, with an emphasis on opportunistic strategies capitalizing on unique
+//         neighborhoods and sites. Specializing in complex pre-development scenarios – including
+//         public/private partnerships, challenging entitlements and disparate stakeholders – his work
+//         leverages real estate expertise to create value-add opportunities across property types and
+//         scales.
+//         `,
+//       `
+//         Prior to Symphony Development, Howard held the positions of Director, Development Strategies
+//         and Director of Operations at Hart Howerton, an internationally recognized land planning and
+//         design firm. Before that, he was a development manager at The Martin Group, an opportunistic
+//         development company, and at Macerich Company, a retail shopping center owner/developer. He
+//         also has taught classes at the University of Southern California, University of
+//         Pennsylvania, Columbia University and the Urban Land Institute.
+//         `,
+//       `
+//         Howard graduated from Harvard University with a Master of Urban Planning. He also holds a
+//         Master of Science degree in Real Estate Development from Columbia University and a Bachelor
+//         of Arts degree in Urban Studies & Design of the Environment from the University of
+//         Pennsylvania.`,
+//     ],
+//   },
 ]
