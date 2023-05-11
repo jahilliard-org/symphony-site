@@ -79,7 +79,7 @@ export const portfolio: Project[] = [
     name: "Agoura Town Center",
     address: "SOUTHWEST CORNER OF AGOURA AND KANAN ROADS",
     desc: [
-      `Entitlement and plan approval for a mixed-use apartment and retail project in Los Angeles. The project includes 179 rental units over 33,500 square feet of retail space to house a Sprouts grocery store. The site was sold in 2013, and is now under construction.`,
+      `Acquisition and development of a mixed-use apartment and retail project in the new Agoura Village Plan area. The project includes a mix of apartments and retail/commercial square footage, located on 11 acres at the southwest corner of Kanan and Agoura Roads.`,
     ],
   },
   {
