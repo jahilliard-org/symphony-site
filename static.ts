@@ -1,7 +1,8 @@
 import { Employee, Project, Slide } from "types"
 
 export const showcase: Slide[] = [
-  { copy: "Next Generation Student Housing", img: "/slides/slide-J9J5C.jpg" },
+  { copy: "Next Generation Student Housing", img: "/slides/slide-AD3G6G.jpg" },
+  { copy: "Transformative Community Design", img: "/slides/slide-J9J5C.jpg" },
   { copy: "Sustainable Building Practices", img: "/slides/slide-0JYY6.jpg" },
   { copy: "Mixed Use Envirorments", img: "/slides/slide-52WRW.jpg" },
   { copy: "Multi-Family and Single-Family Residential", img: "/slides/slide-AV0QB.jpg" },
