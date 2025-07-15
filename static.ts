@@ -22,10 +22,12 @@ export const portfolio: Project[] = [
   {
     id: "california-state-university-at-northridge",
     category: "Student Housing",
-    name: "Northridge Student Apartments",
-    address: "Northridge, CA",
+    name: "Ensemble Northridge Student Apartments",
+    address: "9530 Reseda Blvd, Northridge, CA 91324",
     desc: [
-      `Northridge Student Apartments – Located on Reseda Boulevard, one block away from the university, the property will accommodate a 140 unit, 400 bed student apartment building. Entitlement is underway. Currently on this 1.5 acre site is a 12,000 square foot US Post Office.`,
+      `Ensemble Northridge is a newly completed purpose-built student housing community located on Reseda Boulevard, just one block from California State University, Northridge. Developed on a 1.5-acre site previously occupied by a 12,000-square-foot U.S. Post Office, the project delivers 140 units and 400 beds across a thoughtfully designed, amenity-rich environment. The development was fully entitled and constructed to address the growing demand for high-quality student housing in the area.`,
+      `The property features a contemporary architectural design with a mix of studio, two-, three-, and four-bedroom units, all furnished and equipped with modern finishes, stainless steel appliances, and in-unit washers and dryers. Residents enjoy an extensive suite of lifestyle amenities, including a resort-style pool and sundeck, fire pit lounges, a state-of-the-art fitness center, dedicated study and conference rooms, community game lounges, and secure bike storage. Ground-floor retail space activates the streetscape along Reseda Boulevard, while rooftop solar panels contribute to energy efficiency and sustainability goals.`,
+      `Ensemble Northridge exemplifies the firm’s commitment to delivering high-quality, community-focused developments that enhance student life while integrating seamlessly into the surrounding urban fabric.`,
     ],
   },
   {
